@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { circleImgProps, Img } from './circle-img';
+import { circleImgProps, Img } from './CircleImg';
 
 
 export default {

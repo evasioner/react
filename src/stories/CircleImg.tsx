@@ -1,5 +1,5 @@
 import React from 'react';
-import './circle-img.css';
+import './circleImg.css';
 
 export interface circleImgProps {
   /**
