@@ -5,11 +5,11 @@ import './header.css';
 
 export interface HeaderProps {
   user?: {};
-  onLogin: () => void;
-  onLogout: () => void;
-  onCreateAccount: () => void;
+  onLogin?: () => void;
+  onLogout?: () => void;
+  onCreateAccount?: () => void;
+  pageName?: ""
 }
-
 export const Header: React.FC<HeaderProps> = ({ user, pageName }) => (
   <header>
     <div className="wrapper">

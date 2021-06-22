@@ -3,8 +3,8 @@ import './footer.css';
 
 export interface FooterProps {
   user?: {};
-  onLogin: () => void;
-  onLogout: () => void;
+  onLogin?: () => void;
+  onLogout?: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({ user, onLogin, onLogout }) => (
