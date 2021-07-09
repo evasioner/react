@@ -1,3 +1,4 @@
+import { Button } from '@material-ui/core';
 import Input from '@material-ui/core/Input';
 import React, {useEffect, useState } from 'react';
 import { Footer } from '../stories/Footer';
@@ -29,10 +30,16 @@ export const Login: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAc
     return (
       <article>
         <Header user={user} pageName={pageName} />
-        <section>
-          페이지입니다.
+        <section className="container">
+          <div className="input-box">
+          <Input></Input>
             <Input></Input>
-            내자산 <span> {assets.amount}</span>
+          </div>
+            <div className="btn-box">
+            <Button></Button>
+              <Button></Button>
+            </div>
+
         </section>
         <Footer user={user} onLogin={onLogin} onLogout={onLogout}/>
       </article>
