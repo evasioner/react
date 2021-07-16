@@ -31,7 +31,10 @@ export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAcc
     // }, []);
     return (
       <article>
-        <Header user={user} pageName={pageName} />
+        {/* <Header user={user} pageName={pageName} /> */}
+        <div className="title">
+          <h2>SIGNIN</h2>
+        </div>
         <div className="input-box">
             <Input></Input>
             <Input></Input>
