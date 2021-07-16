@@ -30,7 +30,7 @@ export const MyPage: React.FC<MyPageProps> = ({ user, onLogin, onLogout, onCreat
       <article>
         <Header user={user} pageName={pageName} />
         <section>
-          페이지입니다.
+          마이페이지입니다.
             <Input></Input>
             {/*내자산 <span> {assets.amount}</span>*/}
         </section>

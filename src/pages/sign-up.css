@@ -9,20 +9,23 @@ body {
   min-height: 100%;
 }
 
-.input-box{
+ul{
   width: 100%;
   position: absolute;
-  top: 20%;
+  top: 30%;
   text-align: center;
+  list-style: none;
 }
 
-Input{
-  margin: 10px;
+input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
 }
 
-.btn-box{
+.btn{
   position: absolute;
-  bottom: 30%;
+  bottom: 15%;
   width: 100%;
   text-align: center;
 }

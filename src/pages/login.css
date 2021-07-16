@@ -9,10 +9,23 @@ body {
   min-height: 100%;
 }
 
+.title{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  top: 15%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 42px;
+  color: #84BCFF;
+}
+
 .input-box{
   width: 100%;
   position: absolute;
-  top: 20%;
+  top: 30%;
   text-align: center;
 }
 

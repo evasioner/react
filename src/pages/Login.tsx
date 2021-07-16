@@ -1,9 +1,9 @@
-import { Button } from '@material-ui/core';
-import Input from '@material-ui/core/Input';
 import React, {useEffect, useState } from 'react';
 import { Footer } from '../stories/Footer';
 import { Header } from '../stories/Header';
 import './login.css';
+import {Input} from '../stories/Input';
+import { Button } from '../stories/Button';
 
 export interface LoginProps {
   user?: {};
@@ -29,19 +29,19 @@ export const Login: React.FC<LoginProps> = ({ user, onLogin, onLogout, onCreateA
     }, []);
     return (
       <article>
-        <Header user={user} pageName={pageName} />
-        <section className="container">
-          <div className="input-box">
+      {/* <Header user={user} pageName={pageName} /> */}
+      <div className="title">
+        <h2>SIGNIN</h2>
+      </div>
+      <div className="input-box">
           <Input></Input>
-            <Input></Input>
-          </div>
-            <div className="btn-box">
-            <Button></Button>
-              <Button></Button>
-            </div>
-
-        </section>
-        <Footer user={user} onLogin={onLogin} onLogout={onLogout}/>
-      </article>
+          <Input></Input>
+      </div>
+      <div className="btn-box">
+        <Button label={'LOGIN'}></Button>
+        <Button label={'SIGNUP'}></Button>
+      </div>
+      <Footer user={user} onLogin={onLogin} onLogout={onLogout}/>
+    </article>
     )
 };
