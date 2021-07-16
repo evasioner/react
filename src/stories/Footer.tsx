@@ -10,7 +10,7 @@ export interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ user, onLogin, onLogout }) => (
   <footer className="footer">
     <div className="footer-wrapper">
-      <div>
+      <div className="active">
         <a>마이페이지</a>
       </div>
       <div>

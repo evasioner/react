@@ -5,6 +5,7 @@ import { Footer } from './Footer';
 import { Input } from './Input';
 import './page.css';
 import { Img } from './CircleImg';
+import { Button } from './Button';
 
 export interface PageProps {
   user?: {};
@@ -31,17 +32,14 @@ export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAcc
     return (
       <article>
         <Header user={user} pageName={pageName} />
-        <section>
-          페이지입니다.
+        <div className="input-box">
             <Input></Input>
-            내자산 <span> {assets.amount}</span>
-        <div className="imgBox">
-        <Img></Img>
-        <Img></Img>
-        <Img></Img>
+            <Input></Input>
         </div>
-
-    </section>
+        <div className="btn-box">
+          <Button label={'LOGIN'}></Button>
+          <Button label={'SIGNUP'}></Button>
+        </div>
         <Footer user={user} onLogin={onLogin} onLogout={onLogout}/>
       </article>
     )

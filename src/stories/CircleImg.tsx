@@ -1,5 +1,4 @@
 import React from 'react';
-import './CircleImg.css';
 
 export interface circleImgProps {
   /**
@@ -7,7 +6,6 @@ export interface circleImgProps {
    */
   size?: 'small' | 'medium' | 'large';
 }
-
 
 /**
  * Primary UI component for user interaction
@@ -17,7 +15,7 @@ export const Img: React.FC<circleImgProps> = ({
   ...props
 }) => {
   return (
-        <img src="" className="circle-img" alt="" />
+        <img src="" className="circle" alt="" />
         
   );
 };
