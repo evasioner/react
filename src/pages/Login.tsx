@@ -3,9 +3,9 @@ import Input from '@material-ui/core/Input';
 import React, {useEffect, useState } from 'react';
 import { Footer } from '../stories/Footer';
 import { Header } from '../stories/Header';
-import './page.css';
+import './login.css';
 
-export interface PageProps {
+export interface LoginProps {
   user?: {};
   onLogin?: () => void;
   onLogout?: () => void;
@@ -13,7 +13,7 @@ export interface PageProps {
   pageName?: "";
 }
 
-export const Login: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAccount, pageName }) => {
+export const Login: React.FC<LoginProps> = ({ user, onLogin, onLogout, onCreateAccount, pageName }) => {
     const [hasError, setErrors] = useState(false);
     const [assets, setAssets] = useState({id:1, amount:1});
     useEffect(() => {

@@ -2,9 +2,9 @@ import Input from '@material-ui/core/Input';
 import React, {useEffect, useState } from 'react';
 import { Footer } from '../stories/Footer';
 import { Header } from '../stories/Header';
-import './page.css';
+import './store-list.css';
 
-export interface PageProps {
+export interface StoreListProps {
   user?: {};
   onLogin?: () => void;
   onLogout?: () => void;
@@ -12,7 +12,7 @@ export interface PageProps {
   pageName?: "";
 }
 
-export const StoreList: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAccount, pageName }) => {
+export const StoreList: React.FC<StoreListProps> = ({ user, onLogin, onLogout, onCreateAccount, pageName }) => {
     const [hasError, setErrors] = useState(false);
     const [assets, setAssets] = useState({id:1, amount:1});
     // useEffect(() => {

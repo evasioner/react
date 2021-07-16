@@ -1,0 +1,28 @@
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+body {
+  min-height: 100%;
+}
+
+.input-box{
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+}
+
+Input{
+  margin: 10px;
+}
+
+.btn-box{
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
+}

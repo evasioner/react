@@ -1,14 +1,14 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import {PaymentProps, Payment} from "./Payment";
 import * as HeaderStories from "../stories/Header.stories";
+import {Login, LoginProps} from "./Login";
 
 export default {
-  title: 'Example/Payment',
-  component: Payment,
+  title: 'Example/Login',
+  component: Login,
 } as Meta;
 
-const Template: Story<PaymentProps> = (args) => <Payment {...args} />;
+const Template: Story<LoginProps> = (args) => <Login {...args} />;
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
