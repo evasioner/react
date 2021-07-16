@@ -15,24 +15,21 @@ export interface PageProps {
 export const StoreList: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAccount, pageName }) => {
     const [hasError, setErrors] = useState(false);
     const [assets, setAssets] = useState({id:1, amount:1});
-    useEffect(() => {
-        async function fetchData() {
-            const res = await fetch("http://localhost:3333/api/assets");
-            res
-                .json()
-                .then(res => setAssets(res))
-                .catch(err => setErrors(err));
-        }
-
-        fetchData();
-    }, []);
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         const res = await fetch("http://localhost:3333/api/assets");
+    //         res
+    //             .json()
+    //             .then(res => setAssets(res))
+    //             .catch(err => setErrors(err));
+    //     }
+    //
+    //     fetchData();
+    // }, []);
     return (
       <article>
         <Header user={user} pageName={pageName} />
         <section>
-          페이지입니다.
-            <Input></Input>
-            내자산 <span> {assets.amount}</span>
         </section>
         <Footer user={user} onLogin={onLogin} onLogout={onLogout}/>
       </article>

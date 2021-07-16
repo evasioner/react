@@ -17,15 +17,15 @@ export const Login: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAc
     const [hasError, setErrors] = useState(false);
     const [assets, setAssets] = useState({id:1, amount:1});
     useEffect(() => {
-        async function fetchData() {
-            const res = await fetch("http://localhost:3333/api/assets");
-            res
-                .json()
-                .then(res => setAssets(res))
-                .catch(err => setErrors(err));
-        }
+        // async function fetchData() {
+        //     const res = await fetch("http://localhost:3333/api/assets");
+        //     res
+        //         .json()
+        //         .then(res => setAssets(res))
+        //         .catch(err => setErrors(err));
+        // }
 
-        fetchData();
+        // fetchData();
     }, []);
     return (
       <article>
