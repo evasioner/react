@@ -5,24 +5,44 @@ html {
   font-family: 'Roboto';
 }
 
-body {
+section {
   min-height: 100%;
 }
 
-.input-box{
-  width: 100%;
+.headerTxt{
   position: absolute;
-  top: 20%;
-  text-align: center;
+  left: 5%;
+  top: 5%;
+  color: #84BCFF;
 }
 
-Input{
+.imgBox{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.imgBox span {
+  display: block;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  background-color: #84BCFF;
+  border-radius: 50%;
   margin: 10px;
 }
 
-.btn-box{
-  position: absolute;
-  bottom: 30%;
+.textBox{
   width: 100%;
   text-align: center;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+thead {
+  background-color: #ddd;
 }

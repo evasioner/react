@@ -30,9 +30,46 @@ export const Order: React.FC<OrderProps> = ({ user, onLogin, onLogout, onCreateA
       <article>
         <Header user={user} pageName={pageName} />
         <section>
-          페이지입니다.
-            <Input></Input>
-            {/*내자산 <span> {assets.amount}</span>*/}
+        <div className="headerTxt">
+          <span>주문</span>
+        </div>
+        <div className="inputBox">
+          <input type="text" placeholder="지역을 입력하세요"/>
+        </div>
+        <div className="list">
+          <ul>
+            <li>
+              <a href="">
+                <img src="" alt="" />
+                <div>
+                  <span>파스타맛집</span>
+                  <h3>5.0(100+)</h3>
+                  <p>매콤 파스타,쉬림프 파스타,마스타</p>
+                </div>
+              </a>
+              </li>
+              <li>
+              <a href="">
+                <img src="" alt="" />
+                <div>
+                  <span>파스타맛집</span>
+                  <h3>5.0(100+)</h3>
+                  <p>매콤 파스타,쉬림프 파스타,마스타</p>
+                </div>
+              </a>
+              </li>
+              <li>
+              <a href="">
+                <img src="" alt="" />
+                <div>
+                  <span>파스타맛집</span>
+                  <h3>5.0(100+)</h3>
+                  <p>매콤 파스타,쉬림프 파스타,마스타</p>
+                </div>
+              </a>
+              </li>
+          </ul>
+        </div>
         </section>
         <Footer user={user} onLogin={onLogin} onLogout={onLogout}/>
       </article>

@@ -28,11 +28,50 @@ export const MyPage: React.FC<MyPageProps> = ({ user, onLogin, onLogout, onCreat
     // }, []);
     return (
       <article>
-        <Header user={user} pageName={pageName} />
         <section>
-          마이페이지입니다.
-            <Input></Input>
-            {/*내자산 <span> {assets.amount}</span>*/}
+        <div className="headerTxt">
+          <span>마이페이지</span>
+        </div>
+        <div className="imgBox">
+          <span>아이디</span>
+          <span>닉네임</span>
+          <img src="" alt="" />
+        </div>
+        <div className="textBox">
+          <div className="text">
+            
+            <span>내자산</span>
+            <h2>10,000$</h2>
+          </div>
+        </div>
+        <div>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>일시</th>
+              <th>업체</th>
+              <th>거래금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Approved</td>
+              <td>John is an interesting boy</td>
+            </tr>
+            <tr>
+              <td>Jamie</td>
+              <td>Approved</td>
+              <td>Jamie is a kind girl</td>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Denied</td>
+              <td>Jill is an alright girl</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
         </section>
         <Footer user={user} onLogin={onLogin} onLogout={onLogout}/>
       </article>
