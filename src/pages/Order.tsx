@@ -41,7 +41,7 @@ export const Order: React.FC<OrderProps> = ({ user, onLogin, onLogout, onCreateA
             <li>
               <a href="">
                 <img src="" alt="" />
-                <div>
+                <div className="textBox">
                   <span>파스타맛집</span>
                   <h3>5.0(100+)</h3>
                   <p>매콤 파스타,쉬림프 파스타,마스타</p>
@@ -51,7 +51,7 @@ export const Order: React.FC<OrderProps> = ({ user, onLogin, onLogout, onCreateA
               <li>
               <a href="">
                 <img src="" alt="" />
-                <div>
+                <div className="textBox">
                   <span>파스타맛집</span>
                   <h3>5.0(100+)</h3>
                   <p>매콤 파스타,쉬림프 파스타,마스타</p>
@@ -61,7 +61,7 @@ export const Order: React.FC<OrderProps> = ({ user, onLogin, onLogout, onCreateA
               <li>
               <a href="">
                 <img src="" alt="" />
-                <div>
+                <div className="textBox">
                   <span>파스타맛집</span>
                   <h3>5.0(100+)</h3>
                   <p>매콤 파스타,쉬림프 파스타,마스타</p>

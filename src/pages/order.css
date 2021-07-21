@@ -26,4 +26,18 @@ input {
   width: 80%;
   height: 100%;
   text-align: center;
+  font-size: small;
+}
+
+.textBox{
+  display: inline-block;
+}
+
+li {
+height: 100px;
+}
+img {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
 }
