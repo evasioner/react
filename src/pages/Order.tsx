@@ -32,9 +32,9 @@ export const Order: React.FC<OrderProps> = ({ user, onLogin, onLogout, onCreateA
         <section>
         <div className="headerTxt">
           <span>주문</span>
-        </div>
-        <div className="inputBox">
+          <div className="inputBox">
           <input type="text" placeholder="지역을 입력하세요"/>
+        </div>
         </div>
         <div className="list">
           <ul>
