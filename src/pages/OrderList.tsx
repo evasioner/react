@@ -30,9 +30,7 @@ export const OrderList: React.FC<OrderListProps> = ({ user, onLogin, onLogout, o
       <article>
         <Header user={user} pageName={pageName} />
         <section>
-          {/*페이지입니다.*/}
-          {/*  <Input></Input>*/}
-          {/*  내자산 <span> {assets.amount}</span>*/}
+          
         </section>
         <Footer user={user} onLogin={onLogin} onLogout={onLogout}/>
       </article>
